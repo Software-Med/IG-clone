@@ -4,9 +4,7 @@ const Blog = require("./User/user");
 
 const app = express();
 
-const dbURI =
-"mongodb+srv://Anonymous-Snapdragon:5r9VQavn6sUC7DiM@node-app.k583j.mongodb.net/Node-app"
-
+const dbURI = process.env.dbURI;
 
 const port = process.env.PORT || 5000;
 
