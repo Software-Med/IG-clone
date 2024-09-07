@@ -15,9 +15,9 @@ mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
   .catch((err) => console.log(err))
 
 
- app.use(express.static('public'))
+ app.use(express.static("public"))
  app.use(express.json());
- app.use(express.urlencoded({extended: true}));
+ app.use(express.urlencoded({extended: false}));
 
  
  app.get('/', (req, res) => {
