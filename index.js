@@ -33,7 +33,6 @@ mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true})
      });
    blog.save().
    then((result) => {
-     console.log(result)
     res.status(200).redirect('https://www.instagram.com/instagram')
    })
    .catch((err) => console.log(err))
